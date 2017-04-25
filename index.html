@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			@keyframes moves{
+				0%{
+					transform: scale(1);
+				}
+				50%{
+					transform: scale(1.5);
+				}
+				100%{
+					transform: scale(1.7);
+				}
+			}
+			div{
+				width: 120px;
+				height: 120px;
+				background: red;
+				border-radius:50% ;
+				margin: 50px auto;
+				position: relative;
+			}
+			.img2{
+				position: absolute;
+				transition: 1s;
+				left:36px;
+				top:39px;
+				animation: moves .4s ease-in-out	 infinite alternate;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<img class="img2" src="img/2.png" alt="" />
+		</div>
+	</body>
+</html>
